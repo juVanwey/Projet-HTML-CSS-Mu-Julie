@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../mediaQueries.css">
+    <title>easydev: Introduction au JavaScript</title>
+</head>
+
+<body class="JavaScript-page">
+
+    <header>
+        <nav>
+            <ul>
+                <div class="main-header">
+                    <li><a href="../index.html">
+                            <div class="logoEasyDev"><img src="../assets/easyDevLogo4.png" alt="logo easyDev"></div>
+                        </a></li>
+                    <li class="dropdown"><a href="./HTML.html">HTML</a>
+                        <ul class="dropdown-content">
+                            <li><a href="./HTML.html#definition">Définition du HTML</a></li>
+                            <li><a href="./HTML.html#principe">Principe du balisage</a></li>
+                            <li><a href="./HTML.html#structure">Structure d'une page HTML</a></li>
+                            <li><a href="./HTML.html#pasAPas">Pas à pas : crée ta première page HTML</a></li>
+                            <li><a href="./HTML.html#astuces">Astuces</a></li>
+                            <li><a href="./HTML.html#ressources">Ressources</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="./CSS.html">CSS</a>
+                        <ul class="dropdown-content">
+                            <li><a href="./CSS.html#CSSDefinition">Définition du CSS</a></li>
+                            <li><a href="./CSS.html#fonctionnement">Fonctionnement du CSS</a></li>
+                            <li><a href="./CSS.html#proprietes">Propriétés CSS</a></li>
+                            <li><a href="./CSS.html#CSSPasAPas">Pas à pas : crée ton premier fichier CSS</a></li>
+                            <li><a href="./CSS.html#CSSRessources">Ressources</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="./JavaScript.html">JavaScript</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#JavaScriptDefinition">Définition du JavaScript</a></li>
+                            <li><a href="#JavaScriptFonctionnement">Fonctionnement du JavaScript</a></li>
+                            <li><a href="#JavaScriptProprietes">Propriétés JavaScript</a></li>
+                            <li><a href="#JavaScriptPasAPas">Pas à pas : crée ton premier fichier JavaScript</a></li>
+                            <li><a href="#JavaScriptRessources">Ressources</a></li>
+                        </ul>
+                    </li>
+                    <li class="button"><a href="./Contact.html">Contact</a></li>
+                </div>
+                <div class="responsive-header">
+                    <li><a href="../index.html">
+                            <div class="logoEasyDev"><img src="../assets/easyDevLogo4.png" alt="logo easyDev"></div>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <input type="checkbox" id="dropdown-toggle">
+                        <label for="dropdown-toggle">
+                            <div><img src="../assets/burgerMenu.png" alt="picto menu burger"></div>
+                        </label>
+                        <ul class="dropdown-content">
+                            <li><a href="./HTML.html">HTML</a></li>
+                            <li><a href="./CSS.html">CSS</a></li>
+                            <li><a href="./JavaScript.html">JavaScript</a></li>
+                            <li><a href="./Contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="JavaScriptSection">
+            <div class="upper-card">
+                <h1>Qu'est-ce que le JavaScript ?</h1> <br>
+                <ul>
+                    <li><a href="#JavaScriptDefinition">Définition du JavaScript</a></li>
+                    <li><a href="#JavaScriptFonctionnement">Fonctionnement du JavaScript</a></li>
+                    <li><a href="#JavaScriptProprietes">Propriétés JavaScript</a></li>
+                    <li><a href="#JavaScriptPasAPas">Pas à pas : crée ton premier fichier JavaScript</a></li>
+                    <li><a href="#JavaScriptRessources">Ressources</a></li>
+                </ul>
+            </div>
+            <!-- Article définition -->
+            <article class="card">
+                <h2 id="JavaScriptDefinition">Définition du JavaScript</h2>
+                <p>
+                    <strong>JavaScript</strong> est un langage de programmation utilisé pour créer des pages web
+                    interactives. <br>
+                    Il permet de modifier le contenu d'une page web en fonction des actions de l'utilisateur.
+                </p>
+            </article>
+
+            <!-- Article fonctionnement -->
+            <article class="card">
+                <h2 id="JavaScriptFonctionnement">Fonctionnement du JavaScript</h2>
+                <p>
+                    Le JavaScript fonctionne en manipulant le DOM (Document Object Model). Le DOM est une représentation
+                    de la structure de la page HTML sous forme d'arborescence.
+                </p>
+                <h3>DOM</h3>
+                <p>
+                    Le DOM permet d'accéder et de manipuler les éléments HTML à l'aide de JavaScript.
+                </p>
+                <h3>Événements</h3>
+                <p>
+                    Le JavaScript réagit aux actions de l'utilisateur en utilisant des événements, comme les clics de
+                    souris ou les saisies clavier.
+                </p>
+            </article>
+
+            <!-- Article propriétés -->
+            <article class="card">
+                <h2 id="JavaScriptProprietes">Propriétés JavaScript</h2>
+                <table class="properties-table">
+                    <thead>
+                        <tr>
+                            <th>Méthode</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Méthode">document.getElementById()</td>
+                            <td data-label="Description">Récupère un élément HTML par son ID</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Méthode">addEventListener()</td>
+                            <td data-label="Description">Attache un événement à un élément</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Méthode">innerHTML</td>
+                            <td data-label="Description">Modifie le contenu HTML d'un élément</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Méthode">style</td>
+                            <td data-label="Description">Modifie les styles CSS d'un élément</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <!-- Article pas à pas -->
+            <article class="card">
+                <h2 id="JavaScriptPasAPas">Pas à pas : crée ton premier fichier JavaScript</h2>
+                <p>Suis ces étapes pour créer une page JavaScript simple :</p>
+                <ol>
+                    <li>ouvre dans ton éditeur de texte préféré le dossier qui contient ton fichier index.html</li>
+                    <li>crée un nouveau fichier et nomme-le <code>script.js</code></li>
+                    <li>lie ton fichier JavaScript à ton fichier HTML en utilisant la balise &lt;script&gt; avant la
+                        fermeture de la balise &lt;body&gt; :</li>
+                </ol>
+                <pre><code>
+&lt;script src="script.js"&gt;&lt;/script&gt;
+                </code></pre>
+                <ol start="4">
+                    <li>ajoute le code JavaScript suivant dans ton fichier <code>script.js</code> :</li>
+                </ol>
+                <pre><code>
+function afficherMessageBienvenue() {
+    alert("Bienvenue sur easyDev !");
+}
+
+window.onload = function() {
+    afficherMessageBienvenue();
+};
+                </code></pre>
+                <ol start="5">
+                    <li>enregistre les fichiers</li>
+                    <li>ouvre le fichier HTML dans un navigateur web pour voir le résultat</li>
+                    <li>tadaaa !</li>
+                </ol>
+            </article>
+
+            <!-- Article ressources -->
+            <article class="card">
+                <h2 id="JavaScriptRessources">Ressources</h2>
+                <p>
+                    Voici quelques ressources utiles pour en savoir plus sur le JavaScript :</p><br>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript">MDN Web Docs</a></li>
+                    <li><a href="https://www.w3schools.com/js/">W3Schools</a></li><br>
+                    <li>Vidéo</li>
+                </ul>
+                <div class="video"><iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/FtaQSdrl7YA?si=5k9SG2qbyZHD11k0" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 easydev. Tous droits réservés.</p>
+    </footer>
+
+</body>
+
+</html>

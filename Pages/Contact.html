@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../mediaQueries.css">
+    <title>Nous Contacter - easyDev</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <div class="main-header">
+                    <li><a href="../index.html">
+                            <div class="logoEasyDev"><img src="../assets/easyDevLogo4.png" alt="logo easyDev"></div>
+                        </a></li>
+                    <li class="dropdown"><a href="./HTML.html">HTML</a>
+                        <ul class="dropdown-content">
+                            <li><a href="./HTML.html#definition">Définition du HTML</a></li>
+                            <li><a href="./HTML.html#principe">Principe du balisage</a></li>
+                            <li><a href="./HTML.html#structure">Structure d'une page HTML</a></li>
+                            <li><a href="./HTML.html#pasAPas">Pas à pas : crée ta première page HTML</a></li>
+                            <li><a href="./HTML.html#astuces">Astuces</a></li>
+                            <li><a href="./HTML.html#ressources">Ressources</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="./CSS.html">CSS</a>
+                        <ul class="dropdown-content">
+                            <li><a href="./CSS.html#CSSDefinition">Définition du CSS</a></li>
+                            <li><a href="./CSS.html#fonctionnement">Fonctionnement du CSS</a></li>
+                            <li><a href="./CSS.html#proprietes">Propriétés CSS</a></li>
+                            <li><a href="./CSS.html#CSSPasAPas">Pas à pas : crée ton premier fichier CSS</a></li>
+                            <li><a href="./CSS.html#CSSRessources">Ressources</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="./JavaScript.html">JavaScript</a>
+                        <ul class="dropdown-content">
+                            <li><a href="./JavaScript.html#JavaScriptDefinition">Définition du JavaScript</a></li>
+                            <li><a href="./JavaScript.html#JavaScriptFonctionnement">Fonctionnement du JavaScript</a>
+                            </li>
+                            <li><a href="./JavaScript.html#JavaScriptProprietes">Propriétés JavaScript</a></li>
+                            <li><a href="./JavaScript.html#JavaScriptPasAPas">Pas à pas : crée ton premier fichier
+                                    JavaScript</a></li>
+                            <li><a href="./JavaScript.html#JavaScriptRessources">Ressources</a></li>
+                        </ul>
+                    </li>
+                    <li class="button"><a href="./Contact.html">Contact</a></li>
+                </div>
+                <div class="responsive-header">
+                    <li><a href="../index.html">
+                            <div class="logoEasyDev"><img src="../assets/easyDevLogo4.png" alt="logo easyDev"></div>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <input type="checkbox" id="dropdown-toggle">
+                        <label for="dropdown-toggle">
+                            <div><img src="../assets/burgerMenu.png" alt="picto menu burger"></div>
+                        </label>
+                        <ul class="dropdown-content">
+                            <li><a href="./HTML.html">HTML</a></li>
+                            <li><a href="./CSS.html">CSS</a></li>
+                            <li><a href="./JavaScript.html">JavaScript</a></li>
+                            <li><a href="./Contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contactSection">
+            <div class="upper-card">
+                <h1>Contact</h1> <br>
+                <p><strong>Une question ? Un commentaire ? Un avis ? </strong> Je me lance aussi dans le développement
+                    alors je suis toute
+                    ouïe. <br>
+                    Tu peux remplir le formulaire ci-dessous ou bien me contacter par email ou par téléphone, mes
+                    coordonnées sont ci-dessous !</p>
+            </div>
+            <article class="card">
+                <h2>Formulaire de contact</h2>
+                <form class="form-contact">
+                    <div class="form-row">
+                        <label for="firstName">Prénom :</label>
+                        <input type="text" id="firstName" name="nom" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="message">Message :</label>
+                        <textarea id="message" name="message" rows="10" cols="50" required></textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="automaticAnswer">
+                            <p class="send">Envoyer</p>
+                        </label>
+                        <input type="checkbox" id="automaticAnswer">
+                        <div class="message-confirmation">
+                            <p>Merci pour ton message, je te répondrai dans les plus brefs délais.</p>
+                        </div>
+                    </div>
+                    <!-- <button type="submit" class="submit-button">Envoyer</button> -->
+                </form>
+            </article>
+
+            <article class="card">
+                <h2>Coordonnées</h2>
+                <ul>
+                    <li>
+                        <div class="icon"><img src="../assets/CONTACT/mailIcon.png" alt="Icone email"></div>
+                        <p><strong>contact@easydev.com</strong></p>
+                    </li><br>
+                    <li>
+                        <div class="icon"><img src="../assets/CONTACT/phoneIcon.png" alt="Icone email"></div>
+                        <p><strong>+33 1 23 45 67 89</strong></p>
+                    </li>
+                </ul>
+            </article>
+            <div class="animation-logos">
+                <div><img src="../assets/HTML5Logo.svg" alt="Logo 1"></div>
+                <div><img src="../assets/CSS3Logo.svg" alt="Logo 2"></div>
+                <div><img src="../assets/JavaScriptLogo.png" alt="Logo 3"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2025 easydev. Tous droits réservés.</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../mediaQueries.css">
+    <title>easydev: Introduction au HTML</title>
+</head>
+
+<body class="CSS-page">
+
+    <header>
+        <nav>
+            <ul>
+                <div class="main-header">
+                    <li><a href="../index.html">
+                            <div class="logoEasyDev"><img src="../assets/easyDevLogo4.png" alt="logo easyDev"></div>
+                        </a></li>
+                    <li class="dropdown"><a href="./HTML.html">HTML</a>
+                        <ul class="dropdown-content">
+                            <li><a href="./HTML.html#definition">Définition du HTML</a></li>
+                            <li><a href="./HTML.html#principe">Principe du balisage</a></li>
+                            <li><a href="./HTML.html#structure">Structure d'une page HTML</a></li>
+                            <li><a href="./HTML.html#pasAPas">Pas à pas : crée ta première page HTML</a></li>
+                            <li><a href="./HTML.html#astuces">Astuces</a></li>
+                            <li><a href="./HTML.html#ressources">Ressources</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="./CSS.html">CSS</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#CSSDefinition">Définition du CSS</a></li>
+                            <li><a href="#fonctionnement">Fonctionnement du CSS</a></li>
+                            <li><a href="#proprietes">Propriétés CSS</a></li>
+                            <li><a href="#CSSPasAPas">Pas à pas : crée ton premier fichier CSS</a></li>
+                            <li><a href="#CSSRessources">Ressources</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="./JavaScript.html">JavaScript</a>
+                        <ul class="dropdown-content">
+                            <li><a href="./JavaScript.html#JavaScriptDefinition">Définition du JavaScript</a></li>
+                            <li><a href="./JavaScript.html#JavaScriptFonctionnement">Fonctionnement du JavaScript</a>
+                            </li>
+                            <li><a href="./JavaScript.html#JavaScriptProprietes">Propriétés JavaScript</a></li>
+                            <li><a href="./JavaScript.html#JavaScriptPasAPas">Pas à pas : crée ton premier fichier
+                                    JavaScript</a></li>
+                            <li><a href="./JavaScript.html#JavaScriptRessources">Ressources</a></li>
+                        </ul>
+                    </li>
+                    <li class="button"><a href="./Contact.html">Contact</a></li>
+                </div>
+                <div class="responsive-header">
+                    <li><a href="../index.html">
+                            <div class="logoEasyDev"><img src="../assets/easyDevLogo4.png" alt="logo easyDev"></div>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <input type="checkbox" id="dropdown-toggle">
+                        <label for="dropdown-toggle">
+                            <div><img src="../assets/burgerMenu.png" alt="picto menu burger"></div>
+                        </label>
+                        <ul class="dropdown-content">
+                            <li><a href="./HTML.html">HTML</a></li>
+                            <li><a href="./CSS.html">CSS</a></li>
+                            <li><a href="./JavaScript.html">JavaScript</a></li>
+                            <li><a href="./Contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="CSSSection">
+            <div class="upper-card">
+                <h1>Qu'est-ce que le CSS ?</h1> <br>
+                <ul>
+                    <li><a href="#CSSdefinition">Définition du CSS</a></li>
+                    <li><a href="#fonctionnement">Fonctionnement du CSS</a></li>
+                    <li><a href="#proprietes">Propriétés CSS</a></li>
+                    <li><a href="#CSSPasAPas">Pas à pas : crée ton premier fichier CSS</a></li>
+                    <li><a href="#CSSRessources">Ressources</a></li>
+                </ul>
+            </div>
+            <!-- Article définition -->
+            <article class="card">
+                <h2 id="CSSDefinition">Définition du CSS</h2>
+                <p>
+                    <strong>CSS</strong> (Cascading Style Sheets) est un langage de style utilisé pour décrire
+                    la présentation d'un document HTML. <br>
+                    Il permet de contrôler l'apparence des éléments sur une page web.
+                </p>
+            </article>
+
+            <!-- Article fonctionnement -->
+            <article class="card">
+                <h2 id="fonctionnement">Fonctionnement du CSS</h2>
+                <p>
+                    Le CSS utilise des boîtes pour modéliser les éléments. Chaque élément HTML est considéré comme une
+                    boîte. <br>
+                    Les boîtes peuvent être mises en page en utilisant des modèles comme Flexbox et Grid.
+                </p>
+                <h3>Flexbox</h3>
+                <p>
+                    Flexbox est un modèle de mise en page unidimensionnelle qui permet de répartir l'espace entre les
+                    éléments d'une boîte.
+                </p>
+                <h3>Grid</h3>
+                <p>
+                    Grid est un modèle de mise en page bidimensionnelle qui permet de créer des grilles de colonnes et
+                    de lignes pour organiser les éléments.
+                </p>
+            </article>
+
+            <!-- Article propriétés -->
+            <article class="card">
+                <h2 id="proprietes">Propriétés CSS</h2>
+                <table class="properties-table">
+                    <thead>
+                        <tr>
+                            <th>Propriété</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Propriété">color</td>
+                            <td data-label="Description">Définit la couleur du texte</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Propriété">background-color</td>
+                            <td data-label="Description">Définit la couleur de fond</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Propriété">font-size</td>
+                            <td data-label="Description">Définit la taille de la police</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Propriété">margin</td>
+                            <td data-label="Description">Définit la marge extérieure d'un élément</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Propriété">padding</td>
+                            <td data-label="Description">Définit l'espace intérieur d'un élément</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <!-- Article pas à pas -->
+            <article class="card">
+                <h2 id="CSSPasAPas">Pas à pas : crée ton premier fichier CSS</h2>
+                <p>Suis ces étapes pour créer une page HTML simple :</p> <br>
+                <ol>
+                    <li>ouvre dans ton éditeur de texte préféré le dossier qui contient ton fichier index.html</li>
+                    <li>crée un nouveau fichier et nomme-le <code>style.css</code></li>
+                    <li>lie ton fichier CSS à ton fichier HTML en en utilisant la balise &lt;link&gt; dans le
+                        &lt;head&gt; de ton fichier HTML
+                    <li>ajoute le code suivant dans ton fichier CSS pour donner du style à ton projet :</li>
+                </ol>
+                <pre><code>
+html {
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background: #fff;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+p {
+    margin: 0;
+    padding: 10px 0;
+}
+                    </code></pre>
+                <ol start="5">
+                    <li>enregistrez le fichier</li>
+                    <li>ouvre le fichier dans un navigateur web pour voir le résultat</li>
+                    <li>tadaaa !</li>
+                </ol>
+            </article>
+
+            <!-- Article ressources -->
+            <article class="card">
+                <h2 id="CSSRessources">Ressources</h2>
+                <p>
+                    Voici quelques ressources utiles pour en savoir plus sur le CSS :</p><br>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/fr/docs/Web/CSS">MDN Web Docs</a></li>
+                    <li><a href="https://www.w3schools.com/css/">W3Schools</a></li><br>
+                    <li>Vidéo</li>
+                </ul>
+                <div class="video"><iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/iSWjmVcfQGg?si=vTCTNJCNdsRCL5qE" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            </article>
+            <article class="card-language">
+                <a href="./JavaScript.html">
+                    <div>
+                        <p><strong>Ajoute de l'interactivité à tes pages avec JavaScript</strong></p>
+                        <div><img src="../assets/JavaScriptLogo.png" alt="logo HTML"></div>
+                    </div>
+                </a>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 easydev. Tous droits réservés.</p>
+    </footer>
+
+</body>
+
+</html>

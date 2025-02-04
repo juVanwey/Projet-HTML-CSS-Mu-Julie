@@ -1,0 +1,153 @@
+@media (max-width: 768px) {
+
+    html {
+        font-size: 14px;
+    }
+
+    .main-header {
+        display: none;
+    }
+
+    .responsive-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+    }
+
+    .logoEasyDev {
+        width: 50px;
+
+        img {
+            width: 100%;
+            border-radius: 20px;
+        }
+    }
+
+    .dropdown-content {
+        right: 0;
+        text-align: center;
+    }
+
+    .dropdown-content {
+        min-width: 150px;
+    }
+
+    .dropdown input[type="checkbox"] {
+        display: none;
+    }
+
+    .dropdown input[type="checkbox"]:checked~.dropdown-content {
+        display: block;
+    }
+
+    .dropdown input[type="checkbox"]:checked~.dropdown-content {
+        display: none;
+    }
+
+    .welcome-card {
+        flex-direction: column;
+    }
+
+    .welcome-card-left {
+        width: 100%;
+    }
+
+    .welcome-card-right {
+        width: 100%;
+
+        img {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+
+    .illustration1,
+    .illustration2 {
+        width: 50%;
+        align-self: center;
+    }
+
+    .video {
+        max-width: 100%;
+        aspect-ratio: 16/9;
+        /* position: relative; */
+        align-self: center;
+
+        iframe {
+            /* position:absolute; */
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .card-language {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .card-language div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-language img {
+        margin-top: 8px;
+        width: 40px;
+    }
+
+    .properties-table,
+    .properties-table thead,
+    .properties-table tbody,
+    .properties-table th,
+    .properties-table td,
+    .properties-table tr {
+        display: block;
+    }
+    
+    .properties-table thead tr {
+        display: none;
+    }
+    
+    .properties-table tr {
+        margin-bottom: 15px;
+    }
+    
+    .properties-table td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+    
+    .properties-table td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 10px;
+        font-weight: bold;
+        text-align: left;
+    }
+    
+    .welcome-card {
+
+        .welcome-card-right {
+            width: 75%;
+            padding: 40px;
+        }
+    }
+
+    .animation-logos img {
+        width: 25px;
+    }
+
+}

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../mediaQueries.css">
+    <title>easydev: Introduction au HTML</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <div class="main-header">
+                    <li><a href="../index.html">
+                            <div class="logoEasyDev"><img src="../assets/easyDevLogo4.png" alt="logo easyDev"></div>
+                        </a></li>
+                    <li class="dropdown"><a href="./HTML.html">HTML</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#definition">Définition du HTML</a></li>
+                            <li><a href="#principe">Principe du balisage</a></li>
+                            <li><a href="#structure">Structure d'une page HTML</a></li>
+                            <li><a href="#pasAPas">Pas à pas : crée ta première page HTML</a></li>
+                            <li><a href="#astuces">Astuces</a></li>
+                            <li><a href="#ressources">Ressources</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="./CSS.html">CSS</a>
+                        <ul class="dropdown-content">
+                            <li><a href="./CSS.html#CSSDefinition">Définition du CSS</a></li>
+                            <li><a href="./CSS.html#fonctionnement">Fonctionnement du CSS</a></li>
+                            <li><a href="./CSS.html#proprietes">Propriétés CSS</a></li>
+                            <li><a href="./CSS.html#CSSPasAPas">Pas à pas : crée ton premier fichier CSS</a></li>
+                            <li><a href="./CSS.html#CSSRessources">Ressources</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="./JavaScript.html">JavaScript</a>
+                        <ul class="dropdown-content">
+                            <li><a href="./JavaScript.html#JavaScriptDefinition">Définition du JavaScript</a></li>
+                            <li><a href="./JavaScript.html#JavaScriptFonctionnement">Fonctionnement du JavaScript</a>
+                            </li>
+                            <li><a href="./JavaScript.html#JavaScriptProprietes">Propriétés JavaScript</a></li>
+                            <li><a href="./JavaScript.html#JavaScriptPasAPas">Pas à pas : crée ton premier fichier
+                                    JavaScript</a></li>
+                            <li><a href="./JavaScript.html#JavaScriptRessources">Ressources</a></li>
+                        </ul>
+                    </li>
+                    <li class="button"><a href="./Contact.html">Contact</a></li>
+                </div>
+                <div class="responsive-header">
+                    <li><a href="../index.html">
+                            <div class="logoEasyDev"><img src="../assets/easyDevLogo4.png" alt="logo easyDev"></div>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <input type="checkbox" id="dropdown-toggle">
+                        <label for="dropdown-toggle">
+                            <div><img src="../assets/burgerMenu.png" alt="picto menu burger"></div>
+                        </label>
+                        <ul class="dropdown-content">
+                            <li><a href="./HTML.html">HTML</a></li>
+                            <li><a href="./CSS.html">CSS</a></li>
+                            <li><a href="./JavaScript.html">JavaScript</a></li>
+                            <li><a href="./Contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="HTMLSection">
+            <div class="upper-card">
+                <h1>Qu'est-ce que le HTML ?</h1> <br>
+                <ul>
+                    <li><a href="#definition">Définition du HTML</a></li>
+                    <li><a href="#principe">Principe du balisage</a></li>
+                    <li><a href="#structure">Structure d'une page HTML</a></li>
+                    <li><a href="#pasAPas">Pas à pas : crée ta première page HTML</a></li>
+                    <li><a href="#astuces">Astuces</a></li>
+                    <li><a href="#ressources">Ressources</a></li>
+                </ul>
+            </div>
+            <article class="card">
+                <h2 id="definition"> Définition du HTML</h2>
+                <p>
+                    <strong>HTML</strong> (HyperText Markup Language) est ce qu'on appelle un langage de balisage. <br>
+                    Créé en 1991 par Tim Berners-Lee, HTML est le <strong>langage de balisage</strong> standard utilisé
+                    pour créer des
+                    pages web. <br>
+                    Il permet de structurer et d'<strong>organiser le contenu d'une page web</strong> en utilisant des
+                    balises.
+                </p>
+            </article>
+            <article class="card">
+                <h2 id="principe">Principe du balisage</h2>
+                <p>
+                    HTML utilise des balises pour définir les différents éléments d'une page web. <br>
+                    Une balise HTML est entourée de crochets (&lt; et &gt;) et elle est généralement utilisée par paires
+                    : une balise ouvrante et une balise fermante.
+                </p>
+                <div class="code">
+                    <img src="../assets/HTML/p.png" alt="image code paragraphe">
+                </div>
+                <p>
+                    Les balises sont utilisées pour créer des éléments tels que des titres, des paragraphes, des liens,
+                    des images, et bien plus encore.
+                </p>
+                <h3>Attributs et valeurs</h3>
+                <p>
+                    Les balises HTML peuvent avoir des attributs qui fournissent des informations supplémentaires sur
+                    l'élément. Chaque attribut a un nom et une valeur. <br>
+                    Par exemple :
+                </p>
+                <div class="code">
+                    <img src="../assets/HTML/a.png" alt="image code lien">
+                </div>
+                <p>Ici, l'attribut <code>href</code> spécifie l'URL (valeur) vers laquelle le lien pointe.</p>
+                <h3>Balises orphelines</h3>
+                <p>
+                    Certaines balises HTML n'ont pas besoin de balise fermante. On les appelle des balises orphelines.
+                    <br>
+                    Un exemple courant est la balise <code>&lt;img&gt;</code> pour afficher des images :
+                </p>
+                <div class="code">
+                    <img src="../assets/HTML/img.png" alt="image code image">
+                </div>
+                <p>
+                    L'attribut <code>src</code> indique l'URL de l'image, et l'attribut <code>alt</code> fournit une
+                    description alternative pour les lecteurs d'écran.
+                </p>
+                <h3>Balises couramment utilisées</h3>
+                <ul>
+                    <li>&lt;p&gt; : paragraphe ;</li>
+                    <li>&lt;h1&gt; à &lt;h6&gt; : titres (h1 pour le titre le plus important, h6 pour le moins
+                        important) ;</li>
+                    <li>&lt;img src="url" alt="description"&gt; : image ;</li>
+                    <li>&lt;a href="url"&gt; : lien ;</li>
+                    <li>&lt;ul&gt; et &lt;ol&gt; : listes (ul pour liste non ordonnée, ol pour liste ordonnée) ;</li>
+                    <li>&lt;li&gt; : élément de liste.</li>
+                </ul>
+                <div class="code">
+                    <img src="../assets/HTML/balises.png" alt="image code balises">
+                </div>
+            </article>
+            <article class="card">
+                <h2 id="structure">Structure d'une page HTML</h2>
+                <p>Une page HTML est composée de deux sections principales : l'en-tête (head) et le corps (body).</p>
+                <ul>
+                    <li><strong>&lt;head&gt;</strong> : cette section contient des informations sur la page, telles que
+                        le titre, les liens vers les feuilles de style, et les métadonnées.</li>
+                    <li><strong>&lt;body&gt;</strong> : il s'agit du contenu visible de la page, comme les textes, les
+                        images, et les autres éléments. Le body comprend généralement les sections suivantes :
+                        <ul>
+                            <li><strong>&lt;header&gt;</strong> : contient le titre et le menu de navigation de la page
+                                ;</li>
+                            <li><strong>&lt;main&gt;</strong> : contient le contenu principal de la page, organisé en
+                                sections ;</li>
+                            <li><strong>&lt;footer&gt;</strong> : contient les informations de pied de page, comme les
+                                droits d'auteur et les liens vers les mentions légales.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>Voici un exemple simple :</p>
+                <div class="code">
+                    <img src="../assets/HTML/structure.png" alt="image code structure">
+                </div>
+            </article>
+            <article class="card">
+                <h2 id="structure">Structure d'une page HTML</h2>
+                <p>Une page HTML est composée de deux sections principales : l'en-tête (head) et le corps (body).</p>
+                <ul>
+                    <li><strong>&lt;head&gt;</strong> : cette section contient des informations sur la page, telles que
+                        le titre, les liens vers les feuilles de style, et les métadonnées.</li>
+                    <li><strong>&lt;body&gt;</strong> : il s'agit du contenu visible de la page, comme les textes, les
+                        images, et les autres éléments. Le body comprend généralement les sections suivantes :
+                        <ul>
+                            <li><strong>&lt;header&gt;</strong> : contient le titre et le menu de navigation de la page
+                                ;</li>
+                            <li><strong>&lt;main&gt;</strong> : contient le contenu principal de la page, organisé en
+                                sections ;</li>
+                            <li><strong>&lt;footer&gt;</strong> : contient les informations de pied de page, comme les
+                                droits d'auteur et les liens vers les mentions légales.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>Voici un exemple simple :</p>
+                <div class="code">
+                    <img src="../assets/HTML/structure.png" alt="image code structure">
+                </div>
+            </article>
+            <article class="card">
+                <h2 id="pasAPas">Pas à pas : crée ta première page HTML</h2>
+                <p>Suis ces étapes pour créer une page HTML simple :</p>
+                <ol>
+                    <li>ouvre un éditeur de texte comme <strong>VSCode</strong></li>
+                    <li>crée un nouveau fichier et nomme-le <code>index.html</code></li>
+                    <li>ajoute le code suivant :</li>
+                </ol>
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="fr"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Ma Première Page HTML&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Bienvenue sur ma première page HTML&lt;/h1&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+        &lt;section&gt;
+            &lt;p&gt;Ceci est un paragraphe.&lt;/p&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;
+    &lt;footer&gt;
+        &lt;p&gt;Ceci est le pied de page.&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                <ol start="4">
+                    <li>enregistrez le fichier</li>
+                    <li>ouvre le fichier dans un navigateur web pour voir le résultat</li>
+                </ol>
+            </article>
+            <article class="card">
+                <h2 id="astuces">Astuces</h2>
+                <p>
+                    Tu peux "<strong>inspecter</strong>" les éléments d'une page web et ainsi consulter son code avec
+                    l'outil "Inspecter"
+                    intégré dans la plupart des navigateurs. Voici comment faire :
+                </p>
+                <ol>
+                    <li>ouvre une page web dans un navigateur</li>
+                    <li>fais un clic droit</li>
+                    <li>sélectionne "Inspecter"</li>
+                    <li>une nouvelle fenêtre ou un panneau s'ouvrira, affichant le code HTML</li>
+                </ol>
+                <p>
+                    Pour aller plus loin, tu peux par exemple inspecter sur cette page les 2 éléments ci-dessous et
+                    découvrir comment on fait un tableau et un formulaire.
+                </p>
+                <dl>
+                    <dt><strong>Tableau</strong> : </dt>
+                    <dd>
+                        <table>
+                            <tr>
+                                <th>Nom</th>
+                                <th>Âge</th>
+                                <th>Ville</th>
+                            </tr>
+                            <tr>
+                                <td>Julie</td>
+                                <td>33</td>
+                                <td>Marseille</td>
+                            </tr>
+                            <tr>
+                                <td>Lucie</td>
+                                <td>32</td>
+                                <td>Paris</td>
+                            </tr>
+                        </table>
+                    </dd>
+                    <dt><strong>Formulaire</strong> :</dt> <br>
+                    <dd>
+                        <form action="submit_form.php" method="post">
+                            <label for="nom">Nom:</label>
+                            <input type="text" id="nom" name="nom"><br><br>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email"><br><br>
+                            <!-- <input type="submit" value="Envoyer"> -->
+                        </form>
+                    </dd>
+                </dl>
+            </article>
+            <article class="card">
+                <h2 id="ressources">Ressources</h2>
+                <ul>
+                    <!-- à compléter -->
+                    <li><a href="https://developer.mozilla.org/fr/docs/Web/CSS">MDN Web Docs</a></li>
+                    <li><a href="https://www.w3schools.com/css/">W3Schools</a></li><br>
+                    <li>Vidéo</li>
+                </ul>
+                <div class="video"><iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/qsbkZ7gIKnc?si=aHw8ZW-YFWshw8FQ" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            </article>
+            <article class="card-language">
+                <a href="./CSS.html">
+                    <div>
+                        <p><strong>Découvre comment styliser tes pages avec CSS</strong></p>
+                        <div><img src="../assets/CSS3Logo.svg" alt="logo HTML"></div>
+                    </div>
+                </a>
+            </article>
+    </main>
+
+    <footer>
+        <p>© 2025 easydev. Tous droits réservés.</p>
+    </footer>
+
+</body>
+
+</html>
